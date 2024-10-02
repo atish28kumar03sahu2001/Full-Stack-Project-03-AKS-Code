@@ -7,7 +7,7 @@ export const sendEmail = (emailData) => async (dispatch) => {
 
     try {
         const config = { headers: { 'Content-Type': 'application/json' } };
-        const { data } = await axios.post('http://localhost:8081/api/mail/send', emailData, config);
+        const { data } = await axios.post('https://full-stack-project-03-aks.vercel.app/api/mail/send', emailData, config);
         dispatch({ type: SEND_EMAIL_SUCCESS, payload: data });
     } catch (error) {
         dispatch({
@@ -21,7 +21,7 @@ export const fetchReceivedEmails = (usermail) => async (dispatch) => {
     dispatch({ type: RECEIVE_EMAILS_REQUEST });
 
     try {
-        const response = await axios.get(`http://localhost:8081/api/mail/receivebox/${usermail}`);
+        const response = await axios.get(`https://full-stack-project-03-aks.vercel.app/api/mail/receivebox/${usermail}`);
         dispatch({ type: RECEIVE_EMAILS_SUCCESS, payload: response.data });
         return response.data;
     } catch (error) {
@@ -35,7 +35,7 @@ export const fetchReceivedEmails = (usermail) => async (dispatch) => {
 
 export const starEmail = (usermail, email) => async (dispatch) => {
     try {
-        const response = await axios.post(`http://localhost:8081/api/mail/star`, { usermail, email });
+        const response = await axios.post(`https://full-stack-project-03-aks.vercel.app/api/mail/star`, { usermail, email });
         dispatch({ type: STAR_EMAIL_SUCCESS, payload: response.data });
     } catch (error) {
         console.error('Error starring email:', error);
@@ -46,7 +46,7 @@ export const fetchStarredEmails = (usermail) => async (dispatch) => {
     dispatch({ type: FETCH_STARRED_EMAILS_REQUEST });
 
     try {
-        const response = await axios.get(`http://localhost:8081/api/mail/starbox/${usermail}`);
+        const response = await axios.get(`https://full-stack-project-03-aks.vercel.app/api/mail/starbox/${usermail}`);
         dispatch({ type: FETCH_STARRED_EMAILS_SUCCESS, payload: response.data });
     } catch (error) {
         dispatch({
@@ -58,7 +58,7 @@ export const fetchStarredEmails = (usermail) => async (dispatch) => {
 
 export const unStarEmail = (usermail, emailId) => async (dispatch) => {
     try {
-        await axios.delete(`http://localhost:8081/api/mail/star/${emailId}`, {
+        await axios.delete(`https://full-stack-project-03-aks.vercel.app/api/mail/star/${emailId}`, {
             data: { usermail },
         });
         dispatch({ type: UNSTAR_EMAIL_SUCCESS, payload: emailId });
@@ -72,7 +72,7 @@ export const fetchSentEmails = (usermail) => async (dispatch) => {
     dispatch({ type: FETCH_SENT_EMAILS_REQUEST });
 
     try {
-        const response = await axios.get(`http://localhost:8081/api/mail/sentbox/${usermail}`);
+        const response = await axios.get(`https://full-stack-project-03-aks.vercel.app/api/mail/sentbox/${usermail}`);
         dispatch({ type: FETCH_SENT_EMAILS_SUCCESS, payload: response.data });
     } catch (error) {
         console.error('Error fetching sent emails:', error);
@@ -85,7 +85,7 @@ export const fetchSentEmails = (usermail) => async (dispatch) => {
 
 export const moveToTrash = (usermail, emailId) => async (dispatch) => {
     try {
-        const response = await axios.post('http://localhost:8081/api/mail/trash', { usermail, emailId });
+        const response = await axios.post('https://full-stack-project-03-aks.vercel.app/api/mail/trash', { usermail, emailId });
         dispatch({ type: MOVE_TO_TRASH_SUCCESS, payload: response.data });
     } catch (error) {
         console.error('Error moving email to trash:', error);
@@ -96,7 +96,7 @@ export const fetchTrashEmails = (usermail) => async (dispatch) => {
     dispatch({ type: FETCH_TRASH_EMAILS_REQUEST });
 
     try {
-        const response = await axios.get(`http://localhost:8081/api/mail/trashbox/${usermail}`);
+        const response = await axios.get(`https://full-stack-project-03-aks.vercel.app/api/mail/trashbox/${usermail}`);
         dispatch({ type: FETCH_TRASH_EMAILS_SUCCESS, payload: response.data });
     } catch (error) {
         dispatch({
@@ -108,7 +108,7 @@ export const fetchTrashEmails = (usermail) => async (dispatch) => {
 
 export const untrashEmail = (usermail, emailId) => async (dispatch) => {
     try {
-        const { data } = await axios.post('http://localhost:8081/api/mail/untrash', { usermail, emailId });
+        const { data } = await axios.post('https://full-stack-project-03-aks.vercel.app/api/mail/untrash', { usermail, emailId });
         dispatch({ type: UNTRASH_EMAIL_SUCCESS, payload: data });
     } catch (error) {
         console.error('Error untrashing email:', error);
@@ -118,7 +118,7 @@ export const untrashEmail = (usermail, emailId) => async (dispatch) => {
 export const deleteEmail = (usermail, emailId) => async (dispatch) => {
     try {
         dispatch({ type: DELETE_EMAIL_REQUEST });
-        await axios.delete(`http://localhost:8081/api/mail/trash/${emailId}`, { data: { usermail } });
+        await axios.delete(`https://full-stack-project-03-aks.vercel.app/api/mail/trash/${emailId}`, { data: { usermail } });
         dispatch({ type: DELETE_EMAIL_SUCCESS, payload: emailId });
     } catch (error) {
         dispatch({ type: DELETE_EMAIL_FAILURE, payload: error.message });
