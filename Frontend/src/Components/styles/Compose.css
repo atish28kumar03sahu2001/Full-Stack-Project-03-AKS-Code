@@ -1,0 +1,59 @@
+.CM_HD_H1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin: 10px;
+}
+.CM_H1{
+    font-size: 28px;
+    color: rgb(50, 103, 50);
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+.DIV_FRM_FORM{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.FRM_FORM_CM{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.FMR_IP{
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    margin: 5px;
+}
+.FRM_TXT{
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    margin: 5px;
+    resize: none;
+}
+.MAIL_SBMT{
+    margin: 5px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgb(50, 103, 50);
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

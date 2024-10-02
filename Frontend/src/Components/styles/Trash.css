@@ -1,0 +1,27 @@
+.TRASH_DIV_HD2{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.TRASH_H2{
+    font-size: 28px;
+    color: rgb(50,103,50);
+    font-size: 600;
+    text-align: center;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+.DELBTN{
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(50,103,50);
+}

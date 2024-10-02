@@ -1,0 +1,45 @@
+.PF_DIV_HD{
+    margin: 10px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PF_DIV_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(50, 103, 50);
+}
+.PROFILE_DIV{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.IMG_SRC{
+    width: 140px; 
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid rgb(50, 103, 50);
+    margin: 10px;
+}
+.PF_P{
+    font-size: 14px;
+    font-weight: 600;
+}
+.PF_LGT{
+    border: none;
+    outline: none;
+    background: none;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(50, 103, 50);
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}

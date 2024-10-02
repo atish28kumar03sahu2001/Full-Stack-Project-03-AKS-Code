@@ -1,0 +1,30 @@
+.WEL_DIV{
+    height: 80vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.WEL_DIV_P{
+    text-align: justify;
+    font-size: 12px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+@media screen and (max-width: 500px){
+    .WEL_DIV{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 400px){
+    .WEL_DIV{
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 320px){
+    .WEL_DIV{
+        height: 150vh;
+    }
+}

@@ -1,0 +1,101 @@
+.SGUP_DIV{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.SGUP_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(50, 103, 50);
+}
+.SGUP_DIV_FRM{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.SGUP_FRM{
+    border: 2px solid rgb(50, 103, 50);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+.SGUP_FRM_IMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.FRM_IMG_LBL{
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 103, 50);
+    cursor: pointer;
+}
+.FRM_LBL_IP{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 220px;
+}
+.FRM_LBL{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px;
+}
+.FRM_IP{
+    height: 32px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid black;
+}
+.FRM_IP:focus {
+    border: 2px solid rgb(50, 103, 50);
+}
+
+.FRM_SBTM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.SBMT_BTN{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    background-color: rgb(50, 103, 50);
+    color: white;
+    cursor: pointer;
+}
+.LNK_SN{
+    text-decoration: none;
+    color: rgb(50, 103, 50);
+    font-size: 12px;
+    cursor: pointer;
+}

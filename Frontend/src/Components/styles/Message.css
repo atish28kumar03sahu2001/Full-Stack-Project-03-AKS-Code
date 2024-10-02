@@ -1,0 +1,62 @@
+.MSG_CONTAINER{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    overflow-y: auto;
+}
+.CLS_BTN_DIV{
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.CLS_BTN{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.SEND_DIV{
+    border: 1px solid black;
+    margin: 10px;
+    border-right: none;
+    border-left: none;
+    display: flex;
+}
+.SEND_MSG{
+    padding: 5px;
+    background-color: rgba(50, 103, 50);
+    border-radius: 20px;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MSG_P{
+    padding: 5px;
+    font-size: 14px;
+}
+@media screen and (max-width: 425px){
+    .SEND_DIV{
+        border: none;
+    }
+    .SEND_MSG{
+        font-size: 10px;
+    } 
+    .MSG_P{
+        font-size: 11px;
+    } 
+}

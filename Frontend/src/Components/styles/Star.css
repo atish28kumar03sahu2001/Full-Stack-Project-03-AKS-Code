@@ -1,0 +1,35 @@
+.STR_DIV_HD{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.STR_DIV_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 28px;
+    color: rgb(50,103,50);
+}
+.STR_MAIL_DIV_LST{
+    border: 2px solid rgb(50,103,50);
+    border-radius: 10px;
+    height: 500px;
+    margin: 10px;
+    overflow: scroll;
+}
+.STR_MAIL_LST{
+    border: 1px solid rgb(50,103,50);
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.STR_MSG{
+    font-size: 14PX;
+    font-weight: 600;
+    text-wrap: wrap;
+    text-align: justify;
+    word-wrap: break-word;
+}

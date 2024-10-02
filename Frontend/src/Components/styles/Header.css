@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+.MBH_HD_DIV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 15vh;
+    background-color: rgb(50, 103, 50);
+}
+.MBH_HD_H_DIV{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+}
+.MBH_HD_H{
+    text-decoration: none;
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.MBH_SG_H_DIV{
+    margin: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.MBH_SG_H{
+    text-decoration: none;
+    color: rgb(50, 103, 50);
+    font-size: 16px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+.MBH_SG_H_MENU{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    margin: 10px;
+}
+.MBH_SG_H_MENU:hover{
+    background-color: rgb(26, 54, 26);
+    color: white;
+}
+.ICN_DIV_MENU{
+    display: none;
+}
+.MBH_SG_H_DIV_MENU {
+    background-color: rgb(50, 103, 50);
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 12%;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 15vh;
+    transition: transform 0.3s ease;
+}
+.MBH_BTNS_DIV{
+    margin: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.NAVBAR_BAR{
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .MBH_HD_H_DIV{
+        width: 50%;
+    }
+    .MBH_SG_H_DIV, .MBH_BTNS_DIV{
+        display: none;
+    }
+    .ICN_DIV_MENU{
+        margin: 10px;
+        display: flex;
+    }
+    .MBH_SG_H_DIV_MENU {
+        display: flex;
+    }
+}
+@media screen and (max-width: 425px) {
+    .MBH_HD_H_DIV{
+        width: 70%;
+    }
+    .MBH_HD_H{
+        font-size: 34px;
+    }
+    .MBH_SG_H_DIV_MENU {
+        display: flex; 
+    }
+}
